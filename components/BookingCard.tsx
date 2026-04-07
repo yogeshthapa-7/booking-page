@@ -7,8 +7,8 @@ interface BookingCardProps {
 
 const BookingCard: React.FC<BookingCardProps> = ({ children }) => {
   return (
-    <Card style={{
-      maxWidth:650,
+    <Card className="booking-form" style={{
+      maxWidth: 650,
       width: 600,
       margin: '0 auto',
       borderRadius: 12,

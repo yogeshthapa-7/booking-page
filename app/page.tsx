@@ -20,19 +20,23 @@ const Booking = () => {
 
   return (
     <div
+  className="booking-container"
   style={{
     minHeight: '100vh',
     background: 'linear-gradient(135deg, #99d4dbff 0%, #35637aff 50%, #53cfeeff 100%)',
-    padding: '48px 24px',
+    padding: '24px 16px',
     display: 'flex',
     justifyContent: 'center',
     alignItems: 'center', 
-    gap: '40px',
+    gap: '24px',
+    flexWrap: 'wrap',
   }}
 >
   <div 
+    className="booking-info"
     style={{ 
-      width: 500,
+      width: '100%',
+      maxWidth: 500,
       display: 'flex', 
       flexDirection: 'column', 
       justifyContent: 'center', 

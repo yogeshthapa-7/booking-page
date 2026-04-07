@@ -1,36 +1,89 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Booking Page
+
+A modern booking form page built with Next.js and Ant Design.
+
+## Features
+
+- Clean, responsive booking form interface
+- Form validation with Ant Design components
+- Date picker for selecting booking dates
+- Radio group for booking options
+- Text area for additional notes
+- Success card with confirmation message
+- Mobile-responsive design (adapts at 768px breakpoint)
+- Gradient background
+
+## Tech Stack
+
+- **Framework:** Next.js 16.1.6
+- **UI Library:** Ant Design 6.3.5
+- **Language:** TypeScript
+- **Styling:** CSS with Tailwind CSS 4
 
 ## Getting Started
 
-First, run the development server:
+### Prerequisites
+
+- Node.js 18+
+
+### Installation
+
+```bash
+npm install
+```
+
+### Development
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000) to view the booking page.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### Build
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```bash
+npm run build
+```
 
-## Learn More
+### Start Production Server
 
-To learn more about Next.js, take a look at the following resources:
+```bash
+npm run start
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Project Structure
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+```
+booking_page/
+├── app/
+│   ├── globals.css      # Global styles and responsive breakpoints
+│   ├── layout.tsx       # Root layout with Ant Design registry
+│   └── page.tsx         # Main booking page component
+├── components/
+│   ├── BookingCard.tsx      # Card wrapper for form
+│   ├── BookingForm.tsx      # Main form component
+│   ├── DatePicker.tsx       # Date picker input
+│   ├── FormField.tsx        # Reusable form field wrapper
+│   ├── RadioGroup.tsx       # Radio button group
+│   ├── SubmitButton.tsx     # Submit button component
+│   ├── SuccessCard.tsx      # Success confirmation card
+│   └── TextArea.tsx         # Text area input
+├── package.json
+└── README.md
+```
 
-## Deploy on Vercel
+## Form Fields
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- Name input
+- Email input
+- Phone number input
+- Date picker for booking date
+- Radio group for booking options
+- Text area for additional notes
+- Submit button
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## Responsive Behavior
+
+- **Desktop (>768px):** Shows info panel + form side by side
+- **Mobile (<768px):** Form takes full width, info panel hidden

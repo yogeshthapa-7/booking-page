@@ -25,4 +25,26 @@ a {
   background-color: #000; /* dot color */
 }
 
+@media (max-width: 768px) {
+  .booking-container {
+    flex-direction: column;
+    padding: 16px;
+    gap: 16px;
+  }
+  
+  .booking-info {
+    display: none;
+  }
+  
+  .booking-form {
+    width: 100%;
+    max-width: 100%;
+  }
+  
+  .booking-form .ant-card {
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+}
+
 
